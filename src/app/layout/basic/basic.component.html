@@ -1,0 +1,83 @@
+
+<nz-layout class="ng-star-inserted">
+  <nz-sider  nzWidth="10%"  nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <ul nzTheme="dark" class="ul-list" nz-menu  nzMode="inline">
+      <li nz-submenu nzOpen  nzTitle="Web-Three.js 案例展示" nzIcon="">
+        <ul>
+          <li routerLink="site" nz-menu-item>矩阵 星空背景</li>
+        </ul>
+        <ul>
+          <li routerLink="reptiles" nz-menu-item>旋转</li>
+        </ul>
+        <ul>
+          <li routerLink="table" nz-menu-item>地图</li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout >
+    <nz-header class="ant-layout-header" >
+    </nz-header>
+      <!--<div nz-row [nzGutter]="16">-->
+        <!--<div nz-col [nzSpan]="22" >-->
+          <!--&lt;!&ndash;搜索&ndash;&gt;-->
+          <!--<nz-input-group [nzPrefix]="iconTpl" [nzSuffix]="loadingTpl" class="ant-input-affix-wrapper">-->
+            <!--<ng-template #iconTpl>-->
+              <!--&lt;!&ndash;<i nz-icon [nzType]="focus ? 'arrow-down' : 'search'"></i>&ndash;&gt;-->
+              <!--<i nz-icon nzType="search"></i>-->
+            <!--</ng-template>-->
+            <!--<ng-template #loadingTpl>-->
+              <!--<i *ngIf="loading" nz-icon nzType="loading"></i>-->
+            <!--</ng-template>-->
+            <!--<input-->
+              <!--type="text"-->
+              <!--nz-input-->
+              <!--[(ngModel)]="q"-->
+            <!--(input)="search($event)"-->
+              <!--[nzAutocomplete]="auto"-->
+              <!--hotkey="F1"-->
+              <!--[attr.placeholder]="'搜索'"-->
+            <!--/>-->
+          <!--</nz-input-group>-->
+          <!--<nz-autocomplete nzBackfill #auto>-->
+            <!--<nz-auto-option *ngFor="let i of options" [nzValue]="i">{{ i }}</nz-auto-option>-->
+          <!--</nz-autocomplete>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div nz-col [nzSpan]="2" >&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;用户&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;<div nz-dropdown nzPlacement="bottomRight" [nzDropdownMenu]="userMenu">&ndash;&gt;-->
+            <!--&lt;!&ndash;<nz-avatar [nzSrc]="user.avatar" nzSize="small" class="mr-sm"></nz-avatar>&ndash;&gt;-->
+            <!--&lt;!&ndash;{{ '仿真一号' }}&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<nz-dropdown-menu #userMenu="nzDropdownMenu">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div nz-menu class="width-sm">&ndash;&gt;-->
+              <!--&lt;!&ndash;<div nz-menu-item routerLink="/user/account/center" >&ndash;&gt;-->
+                <!--&lt;!&ndash;<i nz-icon nzType="user" class="mr-sm"></i>&ndash;&gt;-->
+                <!--&lt;!&ndash;{{ '个人中心'}}&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div nz-menu-item routerLink="/user/account/settings">&ndash;&gt;-->
+                <!--&lt;!&ndash;<i nz-icon nzType="setting" class="mr-sm"></i>&ndash;&gt;-->
+                <!--&lt;!&ndash;{{ '个人设置'}}&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li nz-menu-divider></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div nz-menu-item (click)="logout()">&ndash;&gt;-->
+                <!--&lt;!&ndash;<i nz-icon nzType="logout" class="mr-sm"></i>&ndash;&gt;-->
+                <!--&lt;!&ndash;{{ '退出登录'}}&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</nz-dropdown-menu>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--</div>-->
+
+
+
+    <!--</nz-header>-->
+    <nz-content class="ant-layout-content">
+      <router-outlet></router-outlet>
+    </nz-content>
+    <nz-footer  class="text" >北京开发中心 @2023-1-16 Kland</nz-footer>
+  </nz-layout>
+</nz-layout>
+
+
+

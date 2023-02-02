@@ -1,0 +1,23 @@
+<div nz-row nzGutter="24" class="py-lg">
+  <div nz-col nzMd="24" nzLg="7">
+    <nz-card >
+      <div class="avatar-holder">
+        <img src="../../../assets/tmp/img/avatar.jpg" />
+        <div class="name">{{ 'admin' }}</div>
+        <div>ip:<span>192.168.1.144</span></div>
+        <div>时间:<span>公元二零二三</span></div>
+        <div>详细地址:<span>八里庄</span></div>
+      </div>
+    </nz-card>
+  </div>
+  <div nz-col nzMd="24" nzLg="17">
+    <nz-card class="tabs-card" [nzBordered]="false" [nzTitle]="tagTitleTpl">
+      <ng-template #tagTitleTpl>
+        <nz-tabset nzSize="large" [nzSelectedIndex]="pos">
+          <nz-tab *ngFor="let i of tabs" [nzTitle]="i.tab" (nzClick)="to(i)"></nz-tab>
+        </nz-tabset>
+      </ng-template>
+      <router-outlet></router-outlet>
+    </nz-card>
+  </div>
+</div>
