@@ -16,6 +16,7 @@ import { UserRegisterComponent } from './passport/register/register.component';
 //管理页面
 import  {EngineComponent} from "./Emanagement/engine.component";
 import {TableListComponent} from "./table-list/table-list.component";
+import {EffectComponent} from "./effect/effect.component";
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'site', component: DashboardComponent, data: { title: 'web-3D'} },
       { path: 'reptiles', component: EngineComponent, data: { title: '旋转'} },
       { path: 'table', component: TableListComponent, data: { title: '地图'} },
+      { path: 'effect', component: EffectComponent, data: { title: '效果'} },
       { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
     ]
   },

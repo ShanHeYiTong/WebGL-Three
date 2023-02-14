@@ -12,8 +12,8 @@ export class DashboardComponent {
 
   ngOnInit() {
 
-    this.list();
-    this.main();
+    // this.list();
+    // this.main();
   }
 
 //初始化

@@ -20,13 +20,13 @@ export class EngineComponent implements OnInit {
 
 //初始化 查询所有引擎
   initData() {
-    this.test();
-    this.list();
-    this.listt();
-    this.csdn();
-    this.Diagram();
-    this.charset();
-    this.charlist();
+    // this.test();
+    // this.list();
+    // this.listt();
+    // this.csdn();
+    // this.Diagram();
+    // this.charset();
+    // this.charlist();
 
   }
 

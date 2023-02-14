@@ -17,10 +17,10 @@ export class TableListComponent implements OnInit {
     this.initData();
   }
   initData(){
-    this.main();
+    // this.main();
     this.ttl();
-    this.show();
-    this.shu();
+    // this.show();
+    // this.shu();
   }
 
   main() {
@@ -664,7 +664,7 @@ export class TableListComponent implements OnInit {
     renderer.setPixelRatio(window.devicePixelRatio); //采用浏览器的纹理 分辨率
     //将渲染器添加到页面中
     // @ts-ignore
-    document.getElementById("vv").appendChild(renderer.domElement); //设置页面div 显示区域
+    document.getElementById("vvvv").appendChild(renderer.domElement); //设置页面div 显示区域
     //创建控制器
     let controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, -1, 0);
